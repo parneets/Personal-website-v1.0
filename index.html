@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Parneet Singh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="experimentStyles.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="css/animate.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+
+</head>
+<body>
+    
+    
+
+<div class="container">
+  <h4 class="text-allign margin-bottom">Parneet's World</h4>
+  <ul class="nav nav-pills">
+    <li class="active pill-modif"><a data-toggle="pill" href="#home">HOME</a></li>
+    <li><a data-toggle="pill" href="#about">ABOUT ME</a></li>
+    <li><a data-toggle="pill" href="#projects">PROJECTS</a></li>
+    <li><a data-toggle="pill" href="#experience">EXPERIENCE</a></li>
+    <li><a data-toggle="pill" href="#contact">CONTACT ME</a></li>
+    <li><a data-toggle="pill" href="#resume">RESUME</a></li>
+
+  </ul>
+  
+          <!-- New Item -->
+
+  <div class="tab-content">
+      
+    <div id="home" class="tab-pane fade in active">
+        <div class="container tab-pane">
+              <img src="wedpicnew.jpg" class="img-responsive pic-home animated zoomIn">
+              <h2 class="animated slideInLeft text-allign">Parneet Singh</h2>
+              
+              <h3 class="animated slideInRight animateLine text-allign">Software Engineering | University of Waterloo</h3>
+              
+              </div>
+    </div>
+      
+            <!-- New Item -->
+
+      
+      
+    <div id="about" class="tab-pane fade">
+      <p class="text-allign-left font-para para-allign">Hello, My name is Parneet Singh and I am a second year Software Engineering student at the University of Waterloo. Welcome to my world. <br> 
+Technology and programming have always fascinated me. I often found myself working on various gadgets and gizmos in my childhood. I am always curious about new technological advances and releases. I love to apply logic in order to solve complex programming problems. In my view, programming is a skill, unlike any other, that can be used to create something absolutely new from scratch, to bring your imagination to reality and make a difference to the world.</p>
+    </div>
+      
+      <script>
+      $('#accordion').on('show.bs.collapse', function () {
+    if (active) $('#accordion .in').collapse('hide');
+});
+          $('#collapse-init').click(function () {
+    if (active) {
+        active = false;
+        $('.panel-collapse').collapse('show');
+        $('.panel-title').attr('data-toggle', '');
+        $(this).text('Enable accordion behavior');
+    } else {
+        active = true;
+        $('.panel-collapse').collapse('hide');
+        $('.panel-title').attr('data-toggle', 'collapse');
+        $(this).text('Disable accordion behavior');
+    }
+});
+      </script>
+      
+            <!-- New Item -->
+
+      
+    <div id="projects" class="tab-pane fade">
+  <p class="para-allign project-para text-allign ">Click on the panels below to view my projects.</p>
+      <div class="panel-group padding-left-right" id="accordion">
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">  
+      <div class="panel-heading pan-hed-col-chg">
+        <h4 class="panel-title text-allign">Android Application
+            
+        </h4>
+          </div></a>
+      <div id="collapse1" class="panel-collapse collapse" > 
+        <div class="panel-body">
+            <img class="right-position" src="Background_pics/android.png" alt="Smiley face" height="80" width="80">
+            <ul class="decrease-width font-verdana">
+                <li>Created a Tic Tac Toe game for Android.</li>
+                <li>Published it on <a href="https://play.google.com/store/apps/details?id=me.parneetsingh.tictactoe" target="_blank">Play store</a> and received positive user feedback.</li>
+                <li>Developed a compact game algorithm and elegant design.</li>
+                
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">  
+      <div class="panel-heading pan-hed-col-chg">
+        <h4 class="panel-title text-allign">Personal Website
+            
+        </h4>
+          </div></a>
+      <div id="collapse2" class="panel-collapse collapse" > 
+        <div class="panel-body">
+            <img class="right-position" src="Background_pics/website-pic.png" alt="Smiley face" height="80" width="80">
+            <ul class="decrease-width font-verdana">
+                <li>Built a website from scratch using Bootstrap and JavaScript.</li>
+                <li>Made a modular and clean design.</li>
+                <li>The website is fully responsive and dynamic.</li>
+                
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">  
+      <div class="panel-heading pan-hed-col-chg">
+        <h4 class="panel-title text-allign">Leaping Jack
+            
+        </h4>
+          </div></a>
+      <div id="collapse3" class="panel-collapse collapse" > 
+        <div class="panel-body">
+            <img class="leaping-jack-pic" src="Background_pics/leaping-jack.png" alt="Smiley face" height="80" width="80">
+            <ul class="decrease-width font-verdana">
+                <li>Developed a game using HTML-5 Canvas and JavaScript.</li>
+                <li>The player is supposed to shoot ropes and attain maximum height.
+</li>
+                 <li>Worked as an equal member of a two person team.</li>
+                <li>Click on the button below to play the game.</li>
+                <a class="btn btn-large btn-success leaping-jack-pic" id="fire" href="leaping-jack.html" target="_blank">Play</a>
+                
+            </ul>
+          </div>
+      </div>
+    </div>
+            <div class="panel panel-default">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">  
+      <div class="panel-heading pan-hed-col-chg">
+        <h4 class="panel-title text-allign">Scribbler Bot
+            
+        </h4>
+          </div></a>
+      <div id="collapse4" class="panel-collapse collapse" > 
+        <div class="panel-body">
+            <img class="right-position" src="Background_pics/sribbler-bot.png" alt="Smiley face" height="80" width="80">
+            <ul class="decrease-width font-verdana">
+                <li>Programmed a Scribbler Bot with 5 teammates in Python.</li>
+                <li>The robot reached a point on a chessboard, selected by the user on the GUI.</li>
+                <li>Shortest path was calculated using the BFS (breadth first search) algorithm.</li>
+                
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div> 
+    </div>
+      
+      
+      <!-- New Item -->
+      
+      <div id="experience" class="tab-pane fade">
+          <div class="experience-modif">  
+         <p class="text-allign-right">Mississauga, ON | May - August 2015</p>
+              <p class="decrease-width-medium"><b>IT Support Specialist </b>| <em>PRGX Canada Corporation</em></p>
+            <ul class="font-verdana">
+                <li>Maintained and installed company servers and systems.</li>
+                <li>Provided technical support for computer and LAN related issues.</li>
+                <li>Developed a system to view documents using sharepoint and visual basic.</li>
+
+            </ul>
+          </div>
+          
+           <div class="second-para">  
+         <p class="text-allign-right">Multiple Locations, India | 2012 - 2014</p>
+
+              <p class="decrease-width-medium"><b>National Service Scheme </b></p>
+            <ul class="font-verdana">
+                <li>Worked as a speaker and presenter at health camps organized to spread awareness about the methods of waste disposal and importance of hygienic atmosphere .</li>
+                 <li>Interacted with the local community and made reports based on the data collected.</li>
+                <li>Attended various national camps throughout a period of two years .</li>
+
+            </ul>
+          </div>
+          
+                     <div class="second-para">  
+         <p class="text-allign-right">Chandigarh, India | January - August 2014</p>
+
+              <p class="decrease-width-medium"><b>Technical Analyst </b>| <em>Dominant Marketing Agencies</em></p>
+            <ul class="font-verdana">
+                <li>Installed, configured and tested hardware and software.</li>
+                <li>Performed preventive maintenance.</li>
+                <li>Responded to phone and e-mail requests for technical support.</li>
+
+            </ul>
+          </div>
+      </div>
+        
+         
+            <!-- New Item -->
+    <div id="contact" class="tab-pane fade">
+       <p class="click-position para-allign text-allign font-para">Click on the links below, to get in touch with me.</p>
+                    <br><br><br><br><br><br> 
+                            <div class="row specific-position">
+                    <div class="col-md-3 ">
+<a href="mailto:p69singh@uwaterloo.ca" target="_blank"><i class="fa fa-envelope-o font-awesome-icons hov"></a></i>
+                            </div>
+                    <div class="col-md-3">
+                        <a href="https://github.com/parneet95" target="_blank"><i class="fa fa-github hov"></i></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://ca.linkedin.com/in/parneets" target="_blank"><i class="fa fa-linkedin hov"></i></a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://www.facebook.com/profile.php?id=100006593416380" target="_blank"><i class="fa fa-facebook-square hov"></i></a>
+                    </div>
+    </div>
+      </div>
+         
+            <!-- New Item -->
+
+      
+    <div id="resume" class="tab-pane fade">
+       <p class="click-position para-allign text-allign font-para">Click on the following buttons, to view or download my resume.</p>
+       <div class="row">
+                    <a class="resume-button-container col-sm-6 resume-holder" href="Resume.pdf" target="_blank">
+                        <h4 class="resume-button resume-edit">View Resum&eacute;</h4>
+                    </a>
+                    <a class="resume-button-container col-sm-6 resume-holder" href="Resume.pdf" download="Resume.pdf">
+                        <h4 class="resume-button resume-edit">Download Resum&eacute;</h4>
+                    </a>
+                </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
